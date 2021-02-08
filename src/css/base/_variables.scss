@@ -1,0 +1,75 @@
+// ==========================
+// FONT FAMILY
+// ==========================
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// ==========================
+// COLORS
+// ==========================
+$color-transparent: transparent;
+$color-light: #fff;
+$color-gray: #bac0d9;
+$color-gray-1: #434449;
+$color-gray-2: #494f66;
+$color-gray-3: #676f8f;
+$color-gray-4: #a3abcc;
+$color-gray-5: #c5cbe0;
+$color-gray-6: #e4e8f7;
+$color-gray-7: #f0f2fa;
+$color-red: #ef3340;
+$color-light-red: #fc4e55;
+$color-green: #83cc5e;
+$color-error: #ff888d;
+$color-blue: #2f80ed;
+$color-blue-1: #6ea4eb;
+// ==========================
+// BRAKPOINTS
+// ==========================
+$breakpoints: (
+  md: 768px,
+  lg: 1024px,
+  xl: 1366px,
+  xl2: 1440px,
+);
+
+// ==========================
+// Z-INDEX
+// ==========================
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+// ==========================
+// DISPLAYS
+// ==========================
+$displays: (
+  hidden: none,
+  block: block,
+  inline-block: inline-block,
+  inline: inline,
+  flex: flex,
+  grid: grid,
+);
+
+// ==========================
+// GRID SYSTEM
+// ==========================
+$grid-cols: 12;
+$grid-gap: 32px;
+
+// ==========================
+// FONT SIZES
+// ==========================
+$font-d-title: 32px;
+
+// ==========================
+// BACKGROUND
+// ==========================
+$background-primary: $color-gray-1;
+
+// ==========================
+// GENERAL CONFIGURATION
+// ==========================

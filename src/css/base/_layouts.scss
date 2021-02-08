@@ -1,0 +1,51 @@
+// ==================================================
+// CONTAINER
+// ==================================================
+.container {
+  width: 100%;
+  max-width: 1088px;
+  margin: 0 auto;
+  padding-left: $grid-gap;
+  padding-right: $grid-gap;
+
+  @include responsive(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.full-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+// ==================================================
+// GRID SISTEM
+// ==================================================
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: $grid-gap;
+}
+
+// ====================================================
+// GRID COLUMN
+// ====================================================
+@for $i from 1 through $grid-cols {
+  .grid-#{$i} {
+    grid-column: span ($i);
+  }
+}
+
+// ====================================================
+// RESPONSIVE
+// ====================================================
+@each $pointName, $pointValue in $breakpoints {
+  @include responsive($pointName) {
+    @for $i from 1 through $grid-cols {
+      .#{$pointName}\:column-#{$i} {
+        grid-column: span ($i);
+      }
+    }
+  }
+}

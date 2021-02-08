@@ -1,0 +1,113 @@
+.home {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(xl) {
+      margin-top: 4rem;
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    min-height: 366px;
+
+    @include responsive(xl) {
+      width: 50%;
+    }
+  }
+
+  &__right {
+    margin-top: 3rem;
+    margin-bottom: pxToRem(50px);
+
+    @include responsive(xl) {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.benefits {
+  color: $color-light;
+
+  &__title {
+    h1 {
+      @include font-primary-light-36;
+
+      @include responsive(xl) {
+        @include font-primary-light-48;
+      }
+    }
+
+    b {
+      display: block;
+    }
+  }
+
+  &__list {
+    width: 160px;
+    margin-top: 2rem;
+
+    @include responsive(xl) {
+      width: 355px;
+      display: block;
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__item {
+    display: none;
+    @include font-secondary-light-16;
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include responsive(xl) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      &:first-child {
+        flex-direction: row;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    i {
+      $sizeIcon: 20px;
+      display: block;
+      width: $sizeIcon;
+      height: $sizeIcon;
+      margin-bottom: 0.5rem;
+
+      @include responsive(xl) {
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+    }
+
+    span {
+      display: block;
+
+      @include responsive(xl) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__footer {
+    display: none;
+
+    @include responsive(xl) {
+      display: block;
+      @include font-secondary-light-12;
+    }
+  }
+}

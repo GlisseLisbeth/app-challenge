@@ -1,0 +1,9 @@
+@function pxEm($size) {
+  $resize: $size / 16px;
+  @return #{$resize}em;
+}
+
+@function pxRem($size) {
+  $resize: $size / 16px;
+  @return #{$resize}rem;
+}

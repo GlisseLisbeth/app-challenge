@@ -1,0 +1,10 @@
+.logo {
+  width: 92px;
+  height: 16px;
+
+  & svg path {
+    @include responsive(xl) {
+      fill: white;
+    }
+  }
+}

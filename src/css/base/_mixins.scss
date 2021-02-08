@@ -1,0 +1,11 @@
+@mixin responsive($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media screen and (min-width: pxRem(map-get($breakpoints, $bp))) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: pxRem($bp)) {
+      @content;
+    }
+  }
+}

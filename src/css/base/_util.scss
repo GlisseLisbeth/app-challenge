@@ -1,0 +1,45 @@
+// ==================================================
+// UTILITIES
+// ==================================================
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.reverse {
+  @include responsive(md) {
+    grid-auto-flow: column;
+    > :first-child {
+      grid-column-end: -1;
+    }
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@each $displayName, $displayValue in $displays {
+  .#{$displayName} {
+    display: #{$displayValue};
+  }
+}

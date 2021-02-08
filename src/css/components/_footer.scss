@@ -1,0 +1,11 @@
+.footer {
+  color: $color-gray-3;
+  border-top: 1px solid $color-gray-5;
+  padding: 2rem 0;
+
+  @include font-secondary-light-12;
+
+  @include responsive(xl) {
+    display: none;
+  }
+}

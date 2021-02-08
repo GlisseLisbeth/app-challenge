@@ -1,0 +1,39 @@
+.sider {
+  background: $color-red;
+  display: block;
+  height: 396px;
+  min-height: 416px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: -15px;
+  left: 0;
+  border-bottom-right-radius: 50px;
+  transform: skew(-2deg, 0);
+  z-index: -1;
+
+  @include responsive(xl) {
+    width: 53%;
+    min-height: 628px;
+    top: 0;
+    left: -3%;
+    overflow: initial;
+    border-bottom-right-radius: 100px;
+    transform: skew(-5deg, 0);
+  }
+
+  &__img {
+    height: 344px;
+    position: absolute;
+    top: 95px;
+    right: -48px;
+    transform: skew(0, -5deg);
+
+    @include responsive(xl) {
+      height: 448px;
+      top: 130px;
+      right: -150px;
+      transform: skew(0);
+    }
+  }
+}

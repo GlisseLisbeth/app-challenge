@@ -1,0 +1,75 @@
+.form {
+  @include responsive(xl) {
+    width: 320px;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+
+    h2 {
+      b {
+        color: $color-red;
+      }
+
+      @include font-primary-regular-24;
+
+      @include responsive(xl) {
+        @include font-primary-light-28;
+      }
+    }
+
+    p {
+      margin-top: 0.3rem;
+      @include font-secondary-light-16;
+    }
+  }
+
+  &__input-select {
+    display: flex;
+    .select {
+      position: relative;
+      &:after {
+        width: 15px;
+        height: 15px;
+        background: url('assets/icons/gl_arrow_down.png') center bottom
+          no-repeat;
+        position: absolute;
+        top: 30%;
+        left: 60%;
+        content: '';
+        z-index: 98;
+        padding-left: 20px;
+      }
+    }
+    input {
+      width: 85%;
+      border-color: $color-gray-5;
+      border-left: transparent;
+      border-radius: 0 4px 4px 0;
+      height: 56px;
+      &::placeholder {
+        color: $color-gray-4;
+      }
+    }
+  }
+
+  &__input {
+    @include responsive(xl) {
+      width: 288px;
+    }
+  }
+
+  &__verify {
+    margin-bottom: pxRem(40px);
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    @include responsive(xl) {
+      width: 176px;
+    }
+  }
+}

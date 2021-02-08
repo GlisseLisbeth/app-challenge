@@ -1,0 +1,77 @@
+@mixin font-primary-bold-14 {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+
+@mixin font-primary-regular-16 {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+@mixin font-primary-regular-24 {
+  font-family: $font-primary;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+@mixin font-primary-light-28 {
+  font-family: $font-primary;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+}
+
+@mixin font-primary-light-36 {
+  font-family: $font-primary;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+@mixin font-primary-light-48 {
+  font-family: $font-primary;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  font-style: normal;
+  letter-spacing: -0.6px;
+}
+
+@mixin font-secondary-regular-12 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  letter-spacing: 0.2px;
+}
+
+@mixin font-secondary-light-12 {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@mixin font-secondary-light-16 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  font-style: normal;
+  letter-spacing: 0;
+}
